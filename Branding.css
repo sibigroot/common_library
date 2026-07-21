@@ -1,0 +1,64 @@
+/* Suppress the header on the Title/Cover Page */
+@page:first {
+    @top-right { content: none !important; }
+    margin: 0mm !important;
+}
+.pdf-cover-page .custom-global-header {
+    display: none !important;
+}
+
+/* Force the header on TOC and Content Pages */
+@page table-of-contents {
+    @top-right { content: element(custom-global-header) !important; }
+}
+@page normal {
+    @top-right { content: element(custom-global-header) !important; }
+}
+
+/* Ensure the header is visible on TOC and Content Pages */
+.pdf-toc-page .custom-global-header,
+.pdf-content-page .custom-global-header {
+    display: block !important;
+}
+
+/* Cover Page Background Styling */
+.cover-page-bg {
+    position: absolute !important; 
+    top: 0; 
+    left: 0; 
+    width: 100%; 
+    height: 100%;
+    background-color: #21552f !important; 
+    margin: 0mm; 
+    padding: 0mm;
+}
+.cover-page-text { 
+    position: absolute !important; 
+    top: 46%; 
+    width: 100%; 
+    text-align: center; 
+}
+.cover-page-text .wiki-title {
+    font-family: Arial, sans-serif !important; 
+    font-size: 52pt !important;
+    font-weight: bold !important; 
+    color: #ffffff !important; 
+    display: block !important;
+}
+.cover-page-text .wiki-space-title {
+    font-family: Arial, sans-serif !important; 
+    font-size: 52pt !important;
+    font-weight: bold !important; 
+    color: #ffffff !important; 
+    display: block !important;
+}
+
+/* Show Page Name for Single Page Export */
+.pdf-cover-page .wiki-space-title {
+    display: none !important;
+}
+
+/* Show Space Name for Multi-Page Export */
+.pdf-cover-page .wiki-title {
+    display: none !important;
+}
