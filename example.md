@@ -15,8 +15,8 @@ Here is a quick look at our implementation progress:
 Below is an example of a Python script. Markdown automatically applies syntax highlighting based on the language specified:
 
 ```python
-def greet_developer(name):
-    print(f"Hello, {name}! Welcome to Docs as Code.")
+def greet_developer(baby):
+    print("Hello, {baby}! Welcome to Docs as Code.")
 
 # Run the function
 greet_developer("Team")
@@ -24,4 +24,4 @@ greet_developer("Team")
 ```
 preview
 ```
-i lo ve you chitra
+i love you chitra jiiiigit 
