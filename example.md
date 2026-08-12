@@ -6,7 +6,7 @@ Here is a quick look at our implementation progress:
 * [x] Create a Markdown file in VS Code
 * [x] Open the side-by-side preview panel
 * [ ] Commit the document to Git
-* [ ] Deploy to a live production server
+* [ ] Deploy to a live production server 1 1 1 
 
 ---
 
